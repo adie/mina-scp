@@ -1,0 +1,5 @@
+module Mina
+  module Scp
+    VERSION = "0.1.0"
+  end
+end
