@@ -11,7 +11,7 @@ def scp_transfer(direction, from, to, options = {})
   command << " #{from} #{to}"
   print_command command if options[:verbose]
   result = %x[#{command}]
-  puts result if options[:verbose] unless result == ""
+  puts result unless result == ""
 end
 
 def scp_download(from, to, options = {})
