@@ -9,7 +9,9 @@ def scp_transfer(direction, from, to, options = {})
   when :down then from = remote_prefix + from
   end
   command << " #{from} #{to}"
-  options[:verbose] ? %x[command] : system("command")
+  print_command command if options[:verbose]
+  result = %x[#{command}]
+  puts result if options[:verbose] unless result == ""
 end
 
 def scp_download(from, to, options = {})
