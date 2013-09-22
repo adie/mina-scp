@@ -10,7 +10,8 @@ def scp_transfer(direction, from, to, options = {})
   end
   command << " #{from} #{to}"
   print_command command if options[:verbose]
-  exec command
+  result = %x[#{command}]
+  puts result unless result == ""
 end
 
 def scp_download(from, to, options = {})
