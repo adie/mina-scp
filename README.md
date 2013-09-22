@@ -1,5 +1,7 @@
 # Mina SCP
 
+[![Gem Version](https://badge.fury.io/rb/mina-scp.png)](http://badge.fury.io/rb/mina-scp)
+
 Basic SCP helpers for [Mina](https://github.com/nadarei/mina) deployer.
 Used to download/upload files from/to the server.
 
