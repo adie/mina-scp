@@ -53,3 +53,7 @@ To see what has changed in recent versions of Mina SCP, see the [CHANGELOG](http
 Copyright © 2013 Anton Dieterle. See [LICENSE](http://github.com/adie/mina-scp/blob/master/LICENSE.txt) for details.
 
 Project is a member of the [OSS Manifesto](http://ossmanifesto.com/).
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/adie/mina-scp/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
