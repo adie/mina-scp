@@ -36,6 +36,7 @@ scp_upload(local_file, remote_file)
 # Options
 
 If you specify `verbose: true` as the last parameter, it will print the SCP command before running it.
+
 If you want upload or download a folder you can also pass `recursively: true`.
 
 ### Development
