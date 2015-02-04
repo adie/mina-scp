@@ -4,6 +4,7 @@ def scp_transfer(direction, from, to, options = {})
   command = "scp"
   command << " -i #{identity_file}" if identity_file?
   command << " -P #{port}" if port?
+  command << " -r" if options[:recursively]
   case direction
   when :up   then to   = remote_prefix + to
   when :down then from = remote_prefix + from
