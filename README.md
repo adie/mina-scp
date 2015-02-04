@@ -45,15 +45,15 @@ See [CONTRIBUTING](http://github.com/adie/mina-scp/blob/master/CONTRIBUTING.md) 
 
 To see what has changed in recent versions of Mina SCP, see the [CHANGELOG](http://github.com/adie/mina-scp/blob/master/CHANGELOG.md).
 
-### Core Team Members
+### Contributors
 
-* [Anton Dieterle](http://github.com/adie)
+See https://github.com/adie/mina-scp/graphs/contributors
 
 ### Copyright
 
-Copyright © 2013 Anton Dieterle. See [LICENSE](http://github.com/adie/mina-scp/blob/master/LICENSE.txt) for details.
+Copyright © 2013-2015 Anton Dieterle. See [LICENSE](http://github.com/adie/mina-scp/blob/master/LICENSE.txt) for details.
 
-Project is a member of the [OSS Manifesto](http://ossmanifesto.com/).
+Project is a member of the [OSS Manifesto](http://ossmanifesto.org/).
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/adie/mina-scp/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
