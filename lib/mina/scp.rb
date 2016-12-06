@@ -1,9 +1,9 @@
 def scp_transfer(direction, from, to, options = {})
-  remote_prefix = "#{domain!}:"
-  remote_prefix = "#{user}@#{remote_prefix}" if user?
+  remote_prefix = "#{fetch(:domain)}:"
+  remote_prefix = "#{fetch(:user)}@#{remote_prefix}" if set?(:user)
   command = "scp"
-  command << " -i #{identity_file}" if identity_file?
-  command << " -P #{port}" if port?
+  command << " -i #{fetch(:identity_file)}" if set?(:identity_file)
+  command << " -P #{fetch(:port)}" if set?(:port)
   command << " -r" if options[:recursively]
   case direction
   when :up   then to   = remote_prefix + to
@@ -11,7 +11,7 @@ def scp_transfer(direction, from, to, options = {})
   end
   command << " #{from} #{to}"
   print_command command if options[:verbose]
-  result = %x[#{command}]
+  result = `#{command}`
   puts result unless result == ""
 end
 
